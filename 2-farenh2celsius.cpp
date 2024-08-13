@@ -1,7 +1,9 @@
+/* Here mathematic operations are performed over a value given by the user. */
+
 #include <iostream>
+
 using namespace std;
 
-/* Here mathematic operations are performed over a value given by the user. */
 
 int main() {
     float temp_f;

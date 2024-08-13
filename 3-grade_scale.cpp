@@ -1,7 +1,9 @@
+/* This program looks onto the if-else block logic. */
+
 #include <iostream>
+
 using namespace std;
 
-/* This program looks onto the if-else block logic. */
 
 int main() {
     int grade;

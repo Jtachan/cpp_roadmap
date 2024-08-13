@@ -1,10 +1,12 @@
-#include <iostream>
-using namespace std;
-
 /* This program uses 'cin' and 'cout' to get data
 from the user and greet him/her.
 These names come from 'console input' and 'console output'.
 */
+
+#include <iostream>
+
+using namespace std;
+
 
 int main() {
     int age;
