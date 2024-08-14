@@ -1,21 +1,19 @@
-/* This program uses 'cin' and 'cout' to get data
+/* This program uses 'std::cin' and 'std::cout' to get data
  * from the user and greet him/her.
  * These names come from 'console input' and 'console output'.
  */
 
 #include <iostream>
 
-using namespace std;
-
 int main() {
     int age;
-    string name;
+    std::string name;
 
-    cout << "What is your name?" << endl;
-    cin >> name;
-    cout << "How old are you?" << endl;
-    cin >> age;
+    std::cout << "What is your name?" << std::endl;
+    std::cin >> name;
+    std::cout << "How old are you?" << std::endl;
+    std::cin >> age;
 
-    cout << "Hello, " << name << "! You are " << age << " years old." << endl;
+    std::cout << "Hello, " << name << "! You are " << age << " years old." << std::endl;
     return 0;
 }

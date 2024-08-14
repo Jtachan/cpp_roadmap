@@ -10,8 +10,6 @@
 #include <ctime>    // For 'time()'
 #include <iostream>
 
-using namespace std;
-
 int main() {
     /* Seed random number generator.
      * Without the seed, the random number will always be the
@@ -24,23 +22,22 @@ int main() {
     int user_guess;
     bool correct_guess = false;
 
-    cout << "I have selected a number among 1 and 100 "
+    std::cout << "I have selected a number among 1 and 100 "
             "and you have to guess it."
-         << endl;
+         << std::endl;
 
     do {
-        cout << "Enter your guess: ";
-        cin >> user_guess;
+        std::cout << "Enter your guess: ";
+        std::cin >> user_guess;
 
         if (user_guess == random_number) {
-            cout << "Congratulations! You've guessed "
-                    "the number!"
-                 << endl;
+            std::cout << "Congratulations! You've guessed the number!"
+                 << std::endl;
             correct_guess = true;
         } else if (user_guess < random_number) {
-            cout << "Too low!" << endl;
+            std::cout << "Too low!" << std::endl;
         } else {
-            cout << "Too high!" << endl;
+            std::cout << "Too high!" << std::endl;
         }
     } while (!correct_guess);
     return 0;

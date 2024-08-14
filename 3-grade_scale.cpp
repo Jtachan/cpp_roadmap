@@ -2,27 +2,25 @@
 
 #include <iostream>
 
-using namespace std;
-
 int main() {
     int grade;
 
     // It is assumed the given number is always valid:
-    cout << "Enter your grade mark (number among 0 and 100): ";
-    cin >> grade;
+    std::cout << "Enter your grade mark (number among 0 and 100): ";
+    std::cin >> grade;
 
     if (grade >= 90) {
-        cout << "Your grade is A" << endl;
+        std::cout << "Your grade is A" << std::endl;
     } else if (grade >= 80) {
-        cout << "Your grade is B" << endl;
+        std::cout << "Your grade is B" << std::endl;
     } else if (grade >= 70) {
-        cout << "Your grade is C" << endl;
+        std::cout << "Your grade is C" << std::endl;
     } else if (grade >= 60) {
-        cout << "Your grade is D" << endl;
+        std::cout << "Your grade is D" << std::endl;
     } else if (grade >= 50) {
-        cout << "Your grade is E" << endl;
+        std::cout << "Your grade is E" << std::endl;
     } else {
-        cout << "Your grade is F" << endl;
+        std::cout << "Your grade is F" << std::endl;
     }
     return 0;
 }

@@ -7,8 +7,6 @@
  */
 #include <iostream>
 
-using namespace std;
-
 int main() {
     int result = 0;
     // Definition of an array with 10 ints
@@ -24,9 +22,9 @@ int main() {
     int arr_size = sizeof(numbers) / sizeof(numbers[0]);
 
     // Populate the array with the user input:
-    cout << "Provide 10 numbers to be added:" << endl;
+    std::cout << "Provide 10 numbers to be added:" << std::endl;
     for (int i = 0; i < arr_size; i++) {
-        cin >> numbers[i];
+        std::cin >> numbers[i];
     }
 
     // Next syntaxis is valid only from C++11
@@ -35,5 +33,5 @@ int main() {
         result += number;
     }
 
-    cout << "The sum of the numbers is " << result << endl;
+    std::cout << "The sum of the numbers is " << result << std::endl;
 }
