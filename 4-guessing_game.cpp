@@ -1,14 +1,14 @@
 /* Game where a random number among 1 and 100 is chosen.
-The user has to guess the number. For every guess, the
-program will anounce if the number is too high, too low
-or it is the correct guess. 
+ * The user has to guess the number. For every guess, the
+ * program will anounce if the number is too high, too low
+ * or it is the correct guess.
+ *
+ * This exercise practises the 'while' and 'do-while' operations.
+ */
 
-This exercise practises the 'while' and 'do-while' operations.
-*/
-
-#include <iostream>
 #include <cstdlib>  // For 'rand()' and 'srand()'
 #include <ctime>    // For 'time()'
+#include <iostream>
 
 using namespace std;
 
@@ -25,7 +25,8 @@ int main() {
     bool correct_guess = false;
 
     cout << "I have selected a number among 1 and 100 "
-            "and you have to guess it." << endl;
+            "and you have to guess it."
+         << endl;
 
     do {
         cout << "Enter your guess: ";
@@ -33,7 +34,8 @@ int main() {
 
         if (user_guess == random_number) {
             cout << "Congratulations! You've guessed "
-                    "the number!" << endl;
+                    "the number!"
+                 << endl;
             correct_guess = true;
         } else if (user_guess < random_number) {
             cout << "Too low!" << endl;

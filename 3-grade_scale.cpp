@@ -4,11 +4,10 @@
 
 using namespace std;
 
-
 int main() {
     int grade;
 
-    // It is assumed the given number is always valid: 
+    // It is assumed the given number is always valid:
     cout << "Enter your grade mark (number among 0 and 100): ";
     cin >> grade;
 

@@ -1,10 +1,10 @@
 /* Program to sum the numbers in an array.
- * 
+ *
  * This exercise practises:
  *    - Definition & initialization of an array.
  *    - for-loops
  *    - Understanding of 'sizeof()'
-*/
+ */
 #include <iostream>
 
 using namespace std;
@@ -20,7 +20,7 @@ int main() {
      * element has the same size.
      * Thus, the total number of elements is defined by the
      * total size in bytes of the array over the size of one element.
-    */
+     */
     int arr_size = sizeof(numbers) / sizeof(numbers[0]);
 
     // Populate the array with the user input:
