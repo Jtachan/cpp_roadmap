@@ -17,10 +17,10 @@
 #include <iostream>
 
 // Function to swap values.
-void swap(int* a, int* b) {
+void swap(int* a, int& b) {
     int temp = *a;
-    *a = *b;
-    *b = temp;
+    *a = b;
+    b = temp;
 }
 
 int main() {
@@ -55,8 +55,8 @@ int main() {
     int a = 5, b = 10;
     std::cout << "\n4. Pointers with functions\n ********** \n"
               << "Before swap: a=" << a << ", b=" << b << std::endl;
-              
-    swap(&a, &b);  // Passing the memory addresses of 'a' and 'b'.
+
+    swap(&a, b);  // Passing the memory addresses of 'a' and 'b'.
     std::cout << "After swap: a=" << a << ", b=" << b << std::endl;
 
     return 0;
