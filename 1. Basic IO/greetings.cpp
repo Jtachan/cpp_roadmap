@@ -14,6 +14,7 @@ int main() {
     std::cout << "How old are you?" << std::endl;
     std::cin >> age;
 
-    std::cout << "Hello, " << name << "! You are " << age << " years old." << std::endl;
+    std::cout << "Hello, " << name << "! You are " << age << " years old."
+              << std::endl;
     return 0;
 }

@@ -23,8 +23,8 @@ int main() {
     bool correct_guess = false;
 
     std::cout << "I have selected a number among 1 and 100 "
-            "and you have to guess it."
-         << std::endl;
+                 "and you have to guess it."
+              << std::endl;
 
     do {
         std::cout << "Enter your guess: ";
@@ -32,7 +32,7 @@ int main() {
 
         if (user_guess == random_number) {
             std::cout << "Congratulations! You've guessed the number!"
-                 << std::endl;
+                      << std::endl;
             correct_guess = true;
         } else if (user_guess < random_number) {
             std::cout << "Too low!" << std::endl;
@@ -40,5 +40,6 @@ int main() {
             std::cout << "Too high!" << std::endl;
         }
     } while (!correct_guess);
+
     return 0;
 }
