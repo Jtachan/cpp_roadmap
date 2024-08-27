@@ -1,28 +1,9 @@
-/* This exercise defines a program which reads a list of number from a file
- * stores them in a vector. Then, it calculates the following operations:
- *   - Mean (average)
- *   - Median
- *   - Mode
- *
- * REQUIREMENTS
- *   - Pointers:
- *   - Input: Get the name of the file as an user input.
- *   - Error handling: Handle the file is not empty and does not contain numeric
- * data.
- *   - Modular design: Create separate functions to effectively break down the
- * problem.
- *
- * HINTS
- *   - Sorting: Might need to sort the vector to find the median.
- *   - Mode Calculation: A frequency map (e.g., std::map<int, int>) could be
- * helpful for counting occurrences of each number.
- */
 
 #include <fstream>
 #include <iostream>
 #include <vector>
 
-#include "10-statistics.h"
+#include "statistics.h"
 
 // Function declaration
 std::vector<int> read_numbers(const std::string& filename);
