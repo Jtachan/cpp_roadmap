@@ -10,7 +10,7 @@ In this exercise, you'll write a program that reads a list of numbers from a fil
 - Median
 - Mode
 
-### Steps:
+## Steps
 
 - Reading the Numbers: 
 Read all the numbers from a file into a std::vector<int>.

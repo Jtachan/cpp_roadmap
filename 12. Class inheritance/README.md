@@ -28,10 +28,12 @@ Create a program that models a simple hierarchy of classes using inheritance. Yo
     - Print their names, areas, and perimeters.
 
 ## Hints
-Use the keyword virtual in the base class to define pure virtual functions, making Shape an abstract class.
-Use the override keyword in the derived classes when implementing the inherited virtual functions.
-For the Rectangle, the area is calculated as width * height, and the perimeter is 2 * (width + height).
-For the Circle, the area is π * radius * radius, and the perimeter (circumference) is 2 * π * radius. Use the constant M_PI from <cmath> for π.
+
+- Use the keyword virtual in the base class to define pure virtual functions, making Shape an abstract class.
+- Use the override keyword in the derived classes when implementing the inherited virtual functions.
+- For the Rectangle, the area is calculated as width * height, and the perimeter is 2 * (width + height).
+- For the Circle, the area is π * radius * radius, and the perimeter (circumference) is 2 * π * radius. 
+- Use the constant M_PI from <cmath> for π.
 
 ## Expected Output
 When you run your program, it should print something like:

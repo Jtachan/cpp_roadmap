@@ -13,7 +13,7 @@ Write a program that:
     - Division
 - Outputs the result of each operation in a readable format.
   
-## Expected Result:
+## Expected Result
 If the user inputs 10 and 5 as the two integers, the program should output:
 
 ```commandline

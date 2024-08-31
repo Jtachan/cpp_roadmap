@@ -10,7 +10,7 @@ This exercise will help you get familiar with pointers by manipulating them in d
 - Swapping Values: Write a function that swaps the values of two integers using pointers.
 
 
-## Expected Output:
+## Expected Output
 The program will:
  - Show the basics of pointer usage.
  - Demonstrate pointer arithmetic.
