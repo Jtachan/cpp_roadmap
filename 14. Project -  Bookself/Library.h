@@ -117,11 +117,11 @@ bool Library::saveToFile(const std::string& filename) {
         // an ebook.
         EBook* ebook = dynamic_cast<EBook*>(book);
         if (ebook) {
-            outFile << "EBook," << ebook->getTitle() << ','
+            outFile << "EBook:" << ebook->getTitle() << ','
                     << ebook->getAuthor() << ',' << ebook->getIsbn() << ','
                     << ebook->getSize() << '\n';
         } else {
-            outFile << "Book," << book->getTitle() << ',' << book->getAuthor()
+            outFile << "Book:" << book->getTitle() << ',' << book->getAuthor()
                     << ',' << book->getIsbn() << '\n';
         }
         delete book;
@@ -139,7 +139,7 @@ bool Library::loadFromFile(const std::string& filename) {
     }
 
     std::string bookType, title, author, isbn, fileSizeStr;
-    while (std::getline(inFile, bookType, ',')) {
+    while (std::getline(inFile, bookType, ':')) {
         // Obtaining the common parameters:
         std::getline(inFile, title, ',');
         std::getline(inFile, author, ',');
@@ -156,10 +156,10 @@ bool Library::loadFromFile(const std::string& filename) {
             std::getline(inFile, fileSizeStr);
             double fileSize = std::stod(fileSizeStr);
 
-            books.push_back(new EBook(title, author, isbn, fileSize));
+            addBook(new EBook(title, author, isbn, fileSize));
         } else {
             std::getline(inFile, isbn);
-            books.push_back(new Book(title, author, isbn));
+            addBook(new Book(title, author, isbn));
         }
     }
 
