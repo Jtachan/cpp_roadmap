@@ -20,22 +20,26 @@ class Book {
    public:
     /**
      * @brief Constructor of the class.
-     * @param string t - title of the book.
-     * @param string a - author of the book.
-     * @param string i - isbn code of the book.
+     * @param title - title of the book.
+     * @param author - author of the book.
+     * @param isbn - isbn code of the book.
      */
-    Book(std::string& t, std::string& a, std::string& i)
-        : title(t), author(a), isbn(i) {}
+    Book(std::string& title, std::string& author, std::string& isbn);
     virtual ~Book();
 
     /**
      * @brief Displays the information about the book.
      */
-    void display() {
-        std::cout << "Title: " << title << '\n'
-                  << "Author: " << author << '\n'
-                  << "ISBN: " << isbn << std::endl;
-    }
+    void display() const;
 };
+
+Book::Book(std::string& t, std::string& a, std::string& i)
+    : title(t), author(a), isbn(i) {}
+
+void Book::display() const {
+    std::cout << "Title: " << title << '\n'
+              << "Author: " << author << '\n'
+              << "ISBN: " << isbn << std::endl;
+}
 
 #endif
