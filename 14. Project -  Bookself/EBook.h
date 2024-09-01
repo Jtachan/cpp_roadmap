@@ -19,6 +19,8 @@ class EBook : public Book {
     EBook(std::string& title, std::string& author, std::string& isbn,
           double& size);
 
+    double getSize() const;
+
     /**
      * @brief Displays the information of the ebook.
      *
@@ -31,6 +33,8 @@ class EBook : public Book {
 EBook::EBook(std::string& title, std::string& author, std::string& isbn,
              double& size)
     : Book(title, author, isbn), fileSizeMB(size) {}
+
+double EBook::getSize() const { return fileSizeMB; }
 
 void EBook::display() const {
     Book::display();
