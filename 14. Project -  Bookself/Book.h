@@ -24,7 +24,8 @@ class Book {
      * @param author - author of the book.
      * @param isbn - isbn code of the book.
      */
-    Book(std::string& title, std::string& author, std::string& isbn);
+    Book(const std::string& title, const std::string& author,
+         const std::string& isbn);
     virtual ~Book();
 
     std::string getTitle() const;
@@ -37,8 +38,10 @@ class Book {
     void display() const;
 };
 
-Book::Book(std::string& t, std::string& a, std::string& i)
-    : title(t), author(a), isbn(i) {}
+Book::Book(const std::string& title, const std::string& author,
+           const std::string& isbn)
+    : title(title), author(author), isbn(isbn) {}
+Book::~Book() {};
 
 std::string Book::getTitle() const { return title; }
 std::string Book::getAuthor() const { return author; }

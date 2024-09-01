@@ -23,6 +23,9 @@ class Library {
     // No constructor is needed, as it is desired for the attribute
     // to be initialized empty.
 
+    // Destructor:
+    ~Library();
+
     /**
      * @brief Adds a books to the library.
      *
@@ -49,7 +52,7 @@ class Library {
      * terminal (only if the book is found).
      * @return bool - True if the book is found, otherwise false.
      */
-    bool searchByTitle(std::string& title, bool displayMatch) const;
+    bool searchByTitle(const std::string& title, bool displayMatch) const;
 
     /**
      * @brief Saves the information of the library in a file.
@@ -83,11 +86,13 @@ void Library::listBooks() const {
     } else {
         for (const auto& book : books) {
             book->display();
+            std::cout << '\n';
         }
+        std::cout << std::endl;
     }
 }
 
-bool Library::searchByTitle(std::string& title, bool displayMatch) const {
+bool Library::searchByTitle(const std::string& title, bool displayMatch) const {
     for (const auto& book : books) {
         if (book->getTitle() == title) {
             if (displayMatch) {
@@ -126,6 +131,7 @@ bool Library::saveToFile(const std::string& filename) {
         }
         delete book;
     }
+    books.clear();
     outFile.close();
     return true;
 }

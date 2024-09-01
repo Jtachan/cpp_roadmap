@@ -16,8 +16,8 @@ class EBook : public Book {
      * @param isbn - ISBN code of the ebook.
      * @param size - MB that occupies the ebook.
      */
-    EBook(std::string& title, std::string& author, std::string& isbn,
-          double& size);
+    EBook(const std::string& title, const std::string& author,
+          const std::string& isbn, double size);
 
     double getSize() const;
 
@@ -30,8 +30,8 @@ class EBook : public Book {
     void display() const;
 };
 
-EBook::EBook(std::string& title, std::string& author, std::string& isbn,
-             double& size)
+EBook::EBook(const std::string& title, const std::string& author,
+             const std::string& isbn, double size)
     : Book(title, author, isbn), fileSizeMB(size) {}
 
 double EBook::getSize() const { return fileSizeMB; }
