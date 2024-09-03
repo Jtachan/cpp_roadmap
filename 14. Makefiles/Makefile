@@ -7,7 +7,7 @@ LDFLAGS =
 # Define the build target: The name of the final executable file.
 TARGET = shapes
 # Define the source files: A list of all source files.
-SRCS = main.cpp Shape.cpp Circle.cpp Rectangle.cpp Triangle.cpp
+SRCS = main.cpp Circle.cpp Rectangle.cpp Triangle.cpp
 # Define the object files: A list of object files, derived from the source files.
 OBJS = $(SRCS:.cpp=.o)
 

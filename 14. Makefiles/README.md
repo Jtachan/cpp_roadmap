@@ -7,13 +7,13 @@ Understanding the importance of multiple .cpp with .h files and how Makefiles he
 ## Specifications
 
 - Create a Makefile for the project.
-- Define a base class `Shape`.
+- Define a base class `Shape` (only header file).
 - Define the following derived classes from `Shape`:
     - `Circle`
     - `Rectangle`
     - `Triangle`
 - Each class must have a header file (with only declarations) and a .cpp file (with all the code).
-- Each derived class must be able to calculate the area.
+- Each derived class must be able to calculate the area and perimeter.
 
 ## Main File
 
