@@ -38,7 +38,7 @@ bool Library::saveToFile(const std::string& filename) {
         return false;
     }
 
-    for (const auto& book : books) {
+    for (auto& book : books) {
         // Using 'dynamic_cast' to identify if the book is an ebook.
         // This returns a pointer to the EBook or a nullptr if the object is not
         // an ebook.
