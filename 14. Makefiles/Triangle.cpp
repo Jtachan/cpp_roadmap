@@ -3,7 +3,7 @@
 #include <cmath>
 
 Triangle::Triangle(double side1, double side2, double side3)
-    : a(side1), b(side2), c(side3) {}
+    : Shape("Triangle"), a(side1), b(side2), c(side3) {}
 
 double Triangle::area() const {
     double s = perimeter() / 2;
