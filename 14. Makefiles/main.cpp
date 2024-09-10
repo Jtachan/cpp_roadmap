@@ -1,9 +1,9 @@
-#include "Rectangle.h"
-#include "Circle.h"
-#include "Triangle.h"
-
-#include <vector>
 #include <iostream>
+#include <vector>
+
+#include "Circle.h"
+#include "Rectangle.h"
+#include "Triangle.h"
 
 int main() {
     // Defining the vector of pointers to the shapes:
@@ -15,21 +15,23 @@ int main() {
     shapes.push_back(new Triangle(2, 2, 2));
 
     // Printing the shape parameters and recovering memory:
-    for (auto& shape : shapes) {
-        std::cout << "\n*********\nShape: " << shape.getName()
-            << "\nArea: " << shape.area() << "\nPerimeter: " 
-            << shape.perimeter() << '\n';
+    for (Shape* shape : shapes) {
+        std::cout << "\n*********\nShape: " << shape->getName()
+                  << "\nArea: " << shape->area()
+                  << "\nPerimeter: " << shape->perimeter() << '\n';
 
         delete shape;
     }
     std::cout << std::endl;
-    
+
     // Checking if the array is empty:
-    std::cout << "Is array empty after deleting the shapes?: " << shapes.empty() << std::endl;
+    std::cout << "Is array empty after deleting the shapes?: " << shapes.empty()
+              << std::endl;
 
     // Cleaning the array and checking again:
     shapes.clear();
-    std::cout << "Is array empty after deleting the shapes?: " << shapes.empty() << std::endl;
+    std::cout << "Is array empty after deleting the shapes?: " << shapes.empty()
+              << std::endl;
 
     return 0;
 }

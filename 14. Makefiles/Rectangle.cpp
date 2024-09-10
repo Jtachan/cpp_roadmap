@@ -1,6 +1,7 @@
 #include "Rectangle.h"
 
-Rectangle::Rectangle(double w, double h) : Shape("Rectangle"), width(w), height(h) {}
+Rectangle::Rectangle(double w, double h)
+    : Shape("Rectangle"), width(w), height(h) {}
 
 double Rectangle::area() const { return width * height; }
 
