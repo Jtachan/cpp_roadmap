@@ -25,12 +25,23 @@ int main() {
     std::cout << std::endl;
 
     // Checking if the array is empty:
-    std::cout << "Is array empty after deleting the shapes?: " << shapes.empty()
-              << std::endl;
+    std::string result;
+    if (shapes.empty()) {
+        result = "Yes";
+    } else {
+        result = "No";
+    }
+    std::cout << "Is array empty after deleting the shapes individually?: "
+              << result << std::endl;
 
     // Cleaning the array and checking again:
     shapes.clear();
-    std::cout << "Is array empty after deleting the shapes?: " << shapes.empty()
+    if (shapes.empty()) {
+        result = "Yes";
+    } else {
+        result = "No";
+    }
+    std::cout << "Is array empty after using 'clear()'?: " << result << '\n'
               << std::endl;
 
     return 0;

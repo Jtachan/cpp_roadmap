@@ -1,30 +1,27 @@
-# Define the compiler
-CXX = g++
-# Define compiler flags:  -Wall for all warnings, -std=c++11 for C++11 standard.
-CXXFLAGS = -Wall -std=c++11
-# Define the linker flags (if any)
-LDFLAGS = 
-# Define the build target: The name of the final executable file.
-TARGET = shapes
-# Define the source files: A list of all source files.
-SRCS = main.cpp Circle.cpp Rectangle.cpp Triangle.cpp
-# Define the object files: A list of object files, derived from the source files.
-OBJS = $(SRCS:.cpp=.o)
+# The following makefile is defined only for Windows
 
-# Default target to build
+# flags: 
+# 	-g : Debugging information at the executable file
+#	-Wall : Warnings (all)
+#   -std=c++11 : C++11 standard
+CXXFLAGS = -g -Wall -std=c++11
+
+# Folders
+SRC_DIRS = ./src
+INCLUDE_DIRS = ./include
+
+# The name of the executable.
+PROG_NAME = myprog
+
+# Target files
+SRC := $(cmd find ./src)
+TARGET = main.cpp
+
+
 all: $(TARGET)
+	$(CXX) -o $(PROG_NAME) $(TARGET) SRC
 
-# Rule to link the object files into the final executable
-$(TARGET): $(OBJS)
-	$(CXX) $(LDFLAGS) -o $(TARGET) $(OBJS)
-
-# Rule to compile each .cpp file into a .o file
-%.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
-
-# Clean up the build artifacts
 clean:
-	rm -f $(TARGET) $(OBJS)
+	del $(PROG_NAME).exe
 
-# Phony targets: Special target to mark 'all' and 'clean' as phony targets (not actual files).
-.PHONY: all clean
+include
