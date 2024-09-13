@@ -1,5 +1,7 @@
 #include "EBook.h"
 
+#include <iostream>
+
 EBook::EBook(const std::string& title, const std::string& author,
              const std::string& isbn, double size)
     : Book(title, author, isbn), fileSizeMB(size) {}

@@ -3,23 +3,22 @@ SRC_FOLDER = .\sources
 INCL_FOLDER = .\includes
 
 # Names of the .cpp files for the code:
-MAIN = main.cpp
 SRC_NAMES = Book.cpp EBook.cpp Library.cpp
-SRCS = $(addprefix $(SRC_FOLDER)/, $(SRC_NAMES))
+SRCS = $(addprefix $(SRC_FOLDER)/, $(SRC_NAMES)) main.cpp
 
 # Define object files (at the same path as the .cpp files):
-OBJS = $(SRCS:.cpp=.o)
+OBJS = $(addprefix $(BUILD_FOLDER)/, $(notdir $(SRCS:.cpp=.o)))
 
 # Name of the executable that will be created:
 TARGET = library
 
 # Rule for creating .o files from .cpp, considering the corresponding .h file
 $(SRC_FOLDER)/%.o: $(SRC_FOLDER)/%.cpp $(INCL_FOLDER)/%.h
-	g++ -c $< -o $@ -I$(INCL_FOLDER)
+	$(CXX) -c $< -o $@ -I$(INCL_FOLDER)
 
 # Linking rule: create the executable from object files
 $(TARGET): $(OBJS)
-	g++ $(OBJS) -o $(TARGET)
+	$(CXX) $(OBJS) -o $(TARGET)
 
 # Clean rule to remove compiled files
 clean:
