@@ -1,9 +1,5 @@
-/* This program uses 'std::cin' and 'std::cout' to get data
- * from the user and greet him/her.
- * These names come from 'console input' and 'console output'.
- */
-
 #include <iostream>
+#include <string>
 
 int main() {
     int age;
