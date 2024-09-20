@@ -1,25 +1,24 @@
 # Folders where the .cpp and .h files are contained:
-SRC_FOLDER = .\sources
-INCL_FOLDER = .\includes
+SRC_FOLDER := sources
+INCL_FOLDER := includes
 
 # Names of the .cpp files for the code:
 SRC_NAMES = Book.cpp EBook.cpp Library.cpp
-SRCS = $(addprefix $(SRC_FOLDER)/, $(SRC_NAMES)) main.cpp
+SRC_FILES = $(addprefix $(SRC_FOLDER)/, $(SRC_NAMES))
+HEAD_FILES = $(addprefix $(INCL_FOLDER)/, $(SRC_NAMES:.cpp=.h))
+OBJ_FILES = $(SRC_NAMES:.cpp=.o)
 
-# Define object files (at the same path as the .cpp files):
-OBJS = $(addprefix $(BUILD_FOLDER)/, $(notdir $(SRCS:.cpp=.o)))
+TARGET = Library
 
-# Name of the executable that will be created:
-TARGET = library
+all: main.o files.o
+	g++ main.o $(OBJ_FILES) -o $(TARGET)
 
-# Rule for creating .o files from .cpp, considering the corresponding .h file
-$(SRC_FOLDER)/%.o: $(SRC_FOLDER)/%.cpp $(INCL_FOLDER)/%.h
-	$(CXX) -c $< -o $@ -I$(INCL_FOLDER)
+main.o: main.cpp
+	g++ -c main.cpp -I $(INCL_FOLDER)
 
-# Linking rule: create the executable from object files
-$(TARGET): $(OBJS)
-	$(CXX) $(OBJS) -o $(TARGET)
+files.o: $(SRC_FILES) $(HEAD_FILES)
+	g++ -c $(SRC_FOLDER)/*.cpp -I $(INCL_FOLDER)
 
 # Clean rule to remove compiled files
 clean:
-	del /f $(SRC_FOLDER)\*.o $(TARGET).exe
+	del $(OBJ_FILES) $(TARGET).exe main.o
