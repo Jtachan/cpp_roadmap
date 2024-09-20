@@ -24,3 +24,87 @@ Too low!
 Guess the number (1-100): 37
 Congratulations! You've guessed the number!
 ```
+
+## C++ theory
+
+### While loop
+
+The while-loop is defined to execute a code while a condition is true:
+
+```cpp
+int index = 0;
+
+std::cout << "Initial index: " << index << '\n';
+
+while (index < 5) {
+  index++;
+  std::cout << "Index value: " << index << '\n';
+}
+
+std::cout << "End of program" << std::endl;
+```
+
+We can expect the following output from this code:
+```commandline
+Initial index: 0
+Index value: 1
+Index value: 2
+Index value: 3
+Index value: 4
+Index value: 5
+End of program
+```
+
+However, the code within the block will not be executed if the condition is not met:
+
+```cpp
+int index = 20;
+
+std::cout << "Initial index: " << index << '\n';
+
+while (index < 5) {
+  index++;
+  std::cout << "Index value: " << index << '\n';
+}
+
+std::cout << "End of program" << std::endl;
+```
+
+With this code, we can expect the following output:
+
+```
+Initial index: 20
+End of program
+```
+
+### do-while loop
+
+The do-while loop is similar to the while loop, with two major differences:
+
+- The code is structured as `do { ... } while (condition)`
+- The block will run at least once.
+
+Considering the following code as an example:
+
+```cpp
+int index = 20;
+
+std::cout << "Initial index: " << index << '\n';
+
+do {
+  index++;
+  std::cout << "Index value: " << index << '\n';
+} while (index < 5);
+
+std::cout << "End of program" << std::endl;
+```
+
+We can expect the following output:
+
+```cpp
+Initial index: 20
+Index value: 21
+End of program
+```
+
+Thus, the 'do-while' is to be used whenever we want to execute its code at least once.
