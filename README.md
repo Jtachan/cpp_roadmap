@@ -34,5 +34,6 @@ Additionally, within each exercise folder are contained the `.cpp` and `.h` file
     - [13: Polimorphism](Beginner/13.%20Polimorphism/)
     - [14: Makefiles](Beginner/14.%20Makefiles/)
     - [15: Final project](Beginner/15.%20Final%20Project/)
-- Intermediate: (TBD)
+- Intermediate:
+    - [1: Dynamic memory management](Intermediate/01.%20Dynamic%20memory%20management/)
 - Advanced: (TBD)

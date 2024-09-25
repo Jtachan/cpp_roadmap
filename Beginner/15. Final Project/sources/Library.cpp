@@ -51,7 +51,6 @@ bool Library::saveToFile(const std::string& filename) {
             outFile << "Book:" << book->getTitle() << ',' << book->getAuthor()
                     << ',' << book->getIsbn() << '\n';
         }
-        delete book;
     }
     books.clear();
     outFile.close();
