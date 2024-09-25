@@ -1,19 +1,39 @@
-# Getting started
+# Index
 
-This is a guide to create your first C++ code. 
-Here are defined all the step from the installation of all the tools to building and launching the code.
+- [Exercise](#exercise-0-hello-world)
+    - [Objective](#objective)
+    - [Task](#task)
+    - [Hints](#hints)
+- [C++ theory](#c-theory)
+    - [Coding in C++](#coding-in-c)
+    - [Compiling & building](#compiling--building)
+- [Environment setup](#environment-setup)
+    - [Code editor](#code-editor-vs-code)
+    - [Make](#make-for-windows)
 
-## Installation
+# Exercise 0: Hello World
 
-### Code editor (VS Code)
+## Objective
 
-The first step is to have a code editor.
-At this repo, I will continue with the VisualStudio code.
-You can download it from the [official website](https://code.visualstudio.com/download).
-Once downloaded, install is but don't open it yet.
+Getting familiarized with C++ files, their coding style and building the executable. 
 
-### Make for Windows
+## Task
 
+Create a file named 'hello_world.cpp'. The file must:
+
+- Have a single function `int main() { }` which returns 0 at the end.
+- Print through the terminal 'Hello world!'.
+
+Once created, build the program and execute it.
+
+## Hints
+
+- Include the standard library `<iostream>`.
+- Use `sdt::cout << "My message"` to print a message through the terminal.
+- End the terminal use with `std::endl`.
+- You can use `using namespace std` to use `cout` instead of `std::cout`.
+
+# C++ theory
 ## Coding in C++
 
 C++ files have an extension `.cpp` or `.cc`.
@@ -42,24 +62,20 @@ g++ -o my_program main.cpp
 
 With the `-o` parameter, the output `my_program.exe` is created.
 
-# Exercise 0: Hello World
+# Environment setup
 
-## Objective
+This is a guide to setup your end to be able to code in C++.
+For it, you will need:
 
-Getting familiarized with C++ files, their coding style and building the executable. 
+- **Code editor**: We will use Visual Studio Code.
+- **Make**: If you are using Linux, you already have it. This has to be installed for Windows.
 
-## Task
+## Code editor (VS Code)
 
-Create a file named 'hello_world.cpp'. The file must:
+The first step is to have a code editor.
+At this repo, I will continue with the VisualStudio code.
+You can download it from the [official website](https://code.visualstudio.com/download).
+Once downloaded, install is but don't open it yet.
 
-- Have a single function `int main() { }` which returns 0 at the end.
-- Print through the terminal 'Hello world!'.
+## Make for Windows
 
-Once created, build the program and execute it.
-
-## Hints
-
-- Include the standard library `<iostream>`.
-- Use `sdt::cout << "My message"` to print a message through the terminal.
-- End the terminal use with `std::endl`.
-- You can use `using namespace std` to use `cout` instead of `std::cout`.

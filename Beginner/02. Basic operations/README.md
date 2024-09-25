@@ -23,9 +23,9 @@ Multiplication: 10 * 5 = 50
 Division: 10 / 5 = 2
 ```
 
-## C++ Theory
+# C++ Theory
 
-### Types of variables
+## Types of variables
 
 When defining a variable, the type of this one must be specified before its name. 
 Then, the variable must be initialized (its value must be set to a known value) before it is used.
@@ -55,7 +55,7 @@ From C++11 and onwards, there are **fixed-width integer types** using the librar
 There exist also **standard types**, importing the correct library.
 For example `std::string` can be defined when including `<string>`.
 
-### Operations with variables
+## Operations with variables
 
 The **basic operations** that can be perfomed in C++ are:
 

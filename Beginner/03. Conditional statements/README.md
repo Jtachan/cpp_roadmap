@@ -27,9 +27,9 @@ If the user inputs 72, the program should output:
 Your grade is C
 ```
 
-## C++ theory
+# C++ theory
 
-### If-else conditions
+## If-else conditions
 
 An if-block defines a set of code which gets executed only a certain condition is met:
 

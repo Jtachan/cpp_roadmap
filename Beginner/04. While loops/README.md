@@ -1,4 +1,5 @@
 # Exercise 4: Number Guessing Game
+
 ## Objective
 Learn how to use loops (while or do-while) and conditional statements together to create a simple game.
 
@@ -25,9 +26,9 @@ Guess the number (1-100): 37
 Congratulations! You've guessed the number!
 ```
 
-## C++ theory
+# C++ theory
 
-### While loop
+## While loop
 
 The while-loop is defined to execute a code while a condition is true:
 
@@ -77,7 +78,7 @@ Initial index: 20
 End of program
 ```
 
-### do-while loop
+## do-while loop
 
 The do-while loop is similar to the while loop, with two major differences:
 

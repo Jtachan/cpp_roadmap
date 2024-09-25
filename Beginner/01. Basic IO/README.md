@@ -1,3 +1,9 @@
+# Index
+
+- [Exercise](#exercise-1-basic-input-and-output)
+    - [Task](#task)
+    - 
+
 # Exercise 1: Basic Input and Output
 
 ## Objective
@@ -15,8 +21,8 @@ If the user inputs "Alice" as their name and "30" as their age, the program shou
 Hello, Alice! You are 30 years old.
 ```
 
-## C++ theory
-### Using the console
+# C++ theory
+## Using the console
 
 To use the terminal in C++ it is necessary to include the `iostream` library.
 
