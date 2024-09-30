@@ -1,4 +1,13 @@
-# Exercise 10: File I/O Operations
+# Index
+
+- [Exercise](#exercise-8-file-io-operations)
+    - [Objective](#objective)
+    - [Task](#task)
+    - [Hints](#hints)
+    - [Expected result](#expected-result)
+- [C++ theory](#c-theory)
+
+# Exercise 8: File I/O Operations
 ## Objective
 Practice reading from and writing to files in C++. This exercise will help you understand how to handle file streams, manage file input/output, and incorporate error handling.
 
@@ -26,6 +35,7 @@ Practice reading from and writing to files in C++. This exercise will help you u
 - Error Handling: Check if the file stream is in a good state before proceeding with reading or writing operations.
 
 
-## Expected Output
+## Expected Result
 The program should print each number from data.txt to the console, display the sum, and write the sum to result.txt.
 
+# C++ theory

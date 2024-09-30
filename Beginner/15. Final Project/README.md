@@ -1,14 +1,21 @@
-# Exercise: Building a Simple Library Management System
+# Index
+
+- [Exercise](#exercise-14-makefiles)
+    - [Objective](#objective)
+    - [Task](#task)
+- [C++ theory](#c-theory)
+
+# Exercise 15: Building a Library Management System
 In this exercise, you will create a simple library management system using classes, inheritance, and polymorphism. The system will manage a collection of books and allow users to perform basic operations like adding, listing, and searching for books.
 
-## Objectives
+## Objective
 
 - Use classes and inheritance to model a library system.
 - Apply polymorphism to handle different types of books.
 - Implement functions to add, list, and search for books.
 - Use file I/O to save and load book data.
 
-## Specifications
+## Task
 
 - Base Class: Book
   - Attributes:
@@ -33,8 +40,6 @@ In this exercise, you will create a simple library management system using class
     - `saveToFile(const std::string& filename)` — Saves the library data to a file.
     - `loadFromFile(const std::string& filename)` — Loads library data from a file.
 
-## Main Program
-
 Provide a menu-driven interface to:
 - Add new books (both regular and ebooks).
 - List all books.
@@ -42,7 +47,7 @@ Provide a menu-driven interface to:
 - Save the library data to a file.
 - Load the library data from a file.
 
-## Expected Behavior
+### Expected Behavior
 
 - Users can interact with the library system through the console.
 - Books are correctly managed and displayed according to their type (regular or ebook).
@@ -53,3 +58,5 @@ Provide a menu-driven interface to:
 - Use polymorphism to handle different book types in the Library class.
 - Ensure proper memory management (delete allocated objects when done).
 - Use file I/O to persist the library's state between program runs.
+
+# C++ theory

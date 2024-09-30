@@ -1,3 +1,11 @@
+# Index
+
+- [Exercise](#exercise-9-understanding-pointers)
+    - [Objective](#objective)
+    - [Task](#task)
+    - [Expected result](#expected-result)
+- [C++ theory](#c-theory)
+
 # Exercise 9: Understanding Pointers
 ## Objective
 This exercise will help you get familiar with pointers by manipulating them in different ways.
@@ -10,8 +18,10 @@ This exercise will help you get familiar with pointers by manipulating them in d
 - Swapping Values: Write a function that swaps the values of two integers using pointers.
 
 
-## Expected Output
+## Expected result
 The program will:
  - Show the basics of pointer usage.
  - Demonstrate pointer arithmetic.
  - Swap two values using a pointer-based function.
+
+ # C++ theory

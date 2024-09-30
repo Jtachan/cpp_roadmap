@@ -1,9 +1,18 @@
-# Exercise: Inheritance in C++
+# Index
+
+- [Exercise](#exercise-12-inheritance-in-c)
+    - [Objective](#objective)
+    - [Task](#task)
+    - [Hints](#hints)
+    - [Expected result](#expected-result)
+- [C++ theory](#c-theory)
+
+# Exercise 12: Inheritance in C++
 
 ## Objective
 Create a program that models a simple hierarchy of classes using inheritance. You will create a base class Shape and derive two classes Rectangle and Circle from it. Each derived class will implement functions to calculate the area and perimeter of the shapes.
 
-## Requirements
+## Task
 
 - Base Class Shape: Define a base class named Shape containing
     - A protected attribute name to hold the name of the shape.
@@ -35,7 +44,7 @@ Create a program that models a simple hierarchy of classes using inheritance. Yo
 - For the Circle, the area is π * radius * radius, and the perimeter (circumference) is 2 * π * radius. 
 - Use the constant M_PI from <cmath> for π.
 
-## Expected Output
+## Expected Result
 When you run your program, it should print something like:
 
 ```commandline
@@ -47,3 +56,5 @@ Shape: Circle
 Area: 28.2743
 Perimeter: 18.8496
 ```
+
+# C++ theory

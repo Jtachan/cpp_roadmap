@@ -1,8 +1,17 @@
-# Exercise: Implement a Simple BankAccount Class
+# Index
+
+- [Exercise](#exercise-11-implement-a-simple-bankaccount-class)
+    - [Objective](#objective)
+    - [Task](#task)
+    - [Expected result](#expected-result)
+    - [Hints](#hints)
+- [C++ theory](#c-theory)
+
+# Exercise 11: Implement a Simple BankAccount Class
 ## Objective
 Create a BankAccount class that represents a simple bank account with basic operations like depositing money, withdrawing money, and checking the balance.
 
-## Requirements
+## Task
 
 - Class Definition: Create a class named BankAccount with the following private members:
   - std::string account_holder (the name of the account holder)
@@ -17,14 +26,11 @@ Create a BankAccount class that represents a simple bank account with basic oper
   - int get_account_number() const: Returns the account number.
 - Error Handling: Ensure that the withdraw method does not allow the balance to go negative. If the withdrawal amount exceeds the current balance, print an error message.
 
-
-## Main Program
-
 In the main function, create an instance of the BankAccount class.
 Simulate some transactions like depositing money, withdrawing money, and printing the account balance after each transaction.
 
-## Example Output
-```javascript
+## Expected result
+```
 Account Holder: John Doe
 Account Number: 123456
 Initial Balance: $500.00
@@ -42,3 +48,5 @@ Insufficient funds! Current Balance: $550.00
 ## Hints
 - Use const for methods that do not modify the state of the object.
 - Consider how to encapsulate the account data properly, exposing only the necessary methods to interact with the class.
+
+# C++ theory

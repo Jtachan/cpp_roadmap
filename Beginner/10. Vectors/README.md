@@ -1,4 +1,12 @@
-# Exercise: Statistical Analysis of Numbers
+# Index
+
+- [Exercise](#exercise-10-statistical-analysis-of-numbers)
+    - [Objective](#objective)
+    - [Task](#task)
+    - [Steps](#steps)
+- [C++ theory](#c-theory)
+
+# Exercise 10: Statistical Analysis of Numbers
 
 ## Objective
 Understanding vectors and getting used to .h files.
@@ -23,3 +31,5 @@ Handle any potential errors (e.g., non-numeric data).
   - Mode: Identify the number that appears most frequently. If there is a tie for the most frequent number, return all of them.
 - Output the Results:
 Display the mean, median, and mode(s) to the user.
+
+# C++ theory

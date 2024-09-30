@@ -1,3 +1,12 @@
+# Index
+
+- [Exercise](#exercise-6-robust-user-input-with-error-handling)
+    - [Objective](#objective)
+    - [Task](#task)
+    - [Expected result](#expected-result)
+- [C++ theory](#c-theory)
+
+
 # Exercise 6: Robust User Input with Error Handling
 ## Objective
 Learn how to handle errors gracefully, particularly when dealing with user input.
@@ -24,3 +33,5 @@ Input out of range. Please enter an integer between 1 and 100:
 50
 Thank you! You entered 50.
 ```
+
+# C++ theory

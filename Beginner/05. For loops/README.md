@@ -1,3 +1,13 @@
+# Index
+
+- [Exercise](#exercise-5-sum-of-an-array)
+    - [Objective](#objective)
+    - [Task](#task)
+    - [Expected result](#expected-result)
+- [C++ theory](#c-theory)
+    - [for loop](#for-loop)
+    - [Arrays](#arrays)
+
 # Exercise 5: Sum of an Array
 ## Objective
 Learn how to work with arrays and loops in C++.
@@ -12,9 +22,9 @@ Learn how to work with arrays and loops in C++.
 The program should prompt the user to enter 10 integers.
 After entering all the numbers, the program should output the sum of those integers.
 
-## C++ theory
+# C++ theory
 
-### For-loops
+## For-loop
 
 A for-loop is analogous to a while-loop where the condition to finalize and the task to perform at the end of each loop is defined together.
 
@@ -36,7 +46,7 @@ Current index: 4
 End of program
 ```
 
-### Arrays
+## Arrays
 
 An array is a sequence of values, where every value is of the same type.
 Arrays are defined with a fix size:

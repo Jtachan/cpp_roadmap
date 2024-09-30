@@ -1,10 +1,18 @@
-# Exercise: Implementing Polymorphism with Shapes
+# Index
+
+- [Exercise](#exercise-13-implementing-polymorphism-with-shapes)
+    - [Objective](#objective)
+    - [Task](#task)
+    - [Expected result](#expected-result)
+- [C++ theory](#c-theory)
+
+# Exercise 13: Implementing Polymorphism with Shapes
 
 ## Objective
 Create a base class called Shape and derive two classes from it: Circle and Rectangle. Implement a virtual function area() in the base class and override it in the derived classes to calculate the area of each shape.
 You can reuse the classes from the last exercise.
 
-## Requirements
+## Task
 - Base Class (Shape): 
   - Should have a pure virtual function double area() const.
   - Include a virtual destructor which defined from which shape it was called.
@@ -21,7 +29,9 @@ You can reuse the classes from the last exercise.
   - Add different shapes (Circle, Rectangle) to the list.
   - Iterate through the list and display the area of each shape using polymorphism.
 
-## Expected Output
+## Expected result
 The program should display the calculated areas for each shape in the list.
 
 This exercise will help you understand how to use polymorphism to handle objects of different derived types through a common base class interface. Let me know if you need guidance at any point!
+
+# C++ theory

@@ -1,10 +1,17 @@
-# Exercise: Makefiles
+# Index
+
+- [Exercise](#exercise-14-makefiles)
+    - [Objective](#objective)
+    - [Task](#task)
+- [C++ theory](#c-theory)
+
+# Exercise 14: Makefiles
 
 ## Objective
 
 Understanding the importance of multiple .cpp with .h files and how Makefiles help.
 
-## Specifications
+## Task
 
 - Create a Makefile for the project.
 - Define a base class `Shape` (only header file).
@@ -15,10 +22,10 @@ Understanding the importance of multiple .cpp with .h files and how Makefiles he
 - Each class must have a header file (with only declarations) and a .cpp file (with all the code).
 - Each derived class must be able to calculate the area and perimeter.
 
-## Main File
-
 Create a file `main.cpp` which performs the following operations:
 - Create one instance of each derived class.
 - Create a vector of pointers to store each created instance.
 - Iterate over all shapes printing the area.
 - Clear the vector once finished with it.
+
+# C++ theory
