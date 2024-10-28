@@ -1,11 +1,3 @@
-/* Exercise 7: Functions
- * Define multiple functions which will be called within the main function.
- *
- * The exercise practises:
- *  - Usage of header files
- *  - Declaration and implementation of functions
- */
-
 #include <iostream>
 #include "7-functions.h"
 
