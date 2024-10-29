@@ -1,10 +1,3 @@
-/* This program reads a file containing numbers and writes a new file
- * with the result of the sum of all the numbers.
- *
- * This exercise practises:
- *   - Handling I/O objects.
- */
-
 #include <fstream>
 #include <iostream>
 

@@ -5,6 +5,11 @@
     - [Task](#task)
     - [Expected result](#expected-result)
 - [C++ theory](#c-theory)
+    - [Functions](#functions)
+    - [Header files](#header-files)
+        - [Safe include](#safe-include)
+        - [Code documentation](#code-documentation)
+    - [Code compilation](#code-compilation)
 
 # Exercise 7: Functions
 ## Objective
@@ -115,3 +120,21 @@ The block comments to document each function follow a set of rules:
 - Use of `@brief` to define a brief description of the function (no longer than one line). If a longer description/explanation is required, this can be written in the following lane, before the parameters.
 - Use of `@param p_name` to define an input parameter. This can be omitted if the function takes no parameters.
 - Use of `@return type` to define the returned value. This can be omitter if the function is `void` (does not return any value).
+
+## Code compilation
+
+Previously, when at C++ we worked with a single `main.cpp` file, the compilation was quite direct:
+
+```commandline
+g++ main.cpp
+```
+
+This command would generate an `a.exe` file.
+However, when we define new header files, this also needs to be parsed so the main program can compile correctly:
+
+```commandline
+g++ main.cpp math_operations.cpp
+```
+
+As you can see, the difference is not very big. 
+The number of files to parse will grow the more header files we create, but worry not as there is also a solution (explained at the exercise #14) to keep this simple.

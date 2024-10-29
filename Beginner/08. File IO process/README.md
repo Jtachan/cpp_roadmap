@@ -29,8 +29,8 @@ Practice reading from and writing to files in C++. This exercise will help you u
 
 ## Hints
 
-- File Reading: Use std::ifstream for reading from a file.
-- File Writing: Use std::ofstream for writing to a file.
+- File Reading: Use `std::ifstream` for reading from a file.
+- File Writing: Use `std::ofstream` for writing to a file.
 - Loops: You'll likely use a loop to read the numbers from the file.
 - Error Handling: Check if the file stream is in a good state before proceeding with reading or writing operations.
 
